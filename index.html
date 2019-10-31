@@ -3,6 +3,9 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <!-- Google Fonts-->
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Pacifico|Raleway:400,600&display=swap"
       rel="stylesheet">
@@ -28,7 +31,7 @@
 
    <!--Start Hero -->
    <section>
-      <div class="topbar"></div>
+      <div class="topbar container-fluid"></div>
       <div class="hero">
          <div class="hero__container">
             <div class="hero__title">
@@ -48,23 +51,23 @@
 
    <!-- Start Features -->
    <section>
-      <div class="features">
-         <div class="features__grid">
-            <div class="features__element">
+      <div class="container">
+         <div class="features__grid row justify-content-center">
+            <div class="features__element col-lg-4">
                <div class="features__icon"><img src="img/cog-icon.png" alt="cog-icon" /></div>
                <h2>Editable Theme</h2>
                <p class="sub-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla
                   fringilla.</p>
             </div>
 
-            <div class="features__element">
+            <div class="features__element col-lg-4">
                <div class="features__icon"><img src="img/star-icon.png" alt="star-icon" /></div>
                <h2>Flat Design</h2>
                <p class="sub-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla
                   fringilla.</p>
             </div>
 
-            <div class="features__element">
+            <div class="features__element col-lg-4">
                <div class="features__icon"><img src="img/earth-icon.png" alt="earth-icon" /></div>
                <h2>Reach Your Audience</h2>
                <p class="sub-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla
@@ -77,10 +80,10 @@
 
    <!--  Start Notified -->
 
-   <section>
-      <div class="notified">
-         <div class="notified__wrapper">
-            <div class="notified__info">
+   <section class="notified">
+      <div class="container">
+         <div class="notified__wrapper row">
+            <div class="notified__info col-xl-5">
                <h2>Get Notified Of Any Updates!</h2>
                <p>Lorem ipsum dolor sit amet, consectetur
                   adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero,
@@ -91,9 +94,11 @@
                   <button type="submit">Notify</button>
                </form>
             </div>
-            <div class="notified__video">
-               <iframe src="https://player.vimeo.com/video/152365096" width="500" height="281" frameborder=""
-                  allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <div class="col-xl-5">
+               <div class="notified__video">
+                  <iframe src="https://player.vimeo.com/video/152365096" width="500" height="281" frameborder=""
+                     allow="autoplay; fullscreen" allowfullscreen></iframe>
+               </div>
             </div>
          </div>
       </div>
@@ -104,8 +109,8 @@
    <!--  Start Testimonials -->
 
    <section>
-      <div class="testimonials">
-         <div class="testimonials__wrapper">
+      <div class="testimonials container-fluid">
+         <div class="testimonials__wrapper no-padding row d-flex flex flex-column">
             <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu
                commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”
             </p>
@@ -205,8 +210,8 @@
    <!--  Start Contact -->
 
    <section>
-      <div class="contact">
-         <div class="contact__wrapper">
+      <div class="contact container">
+         <div class="contact__wrapper row">
             <h2>Say Hi & Get in Touch</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.</p>
             <div class="contact__icons">
@@ -221,9 +226,13 @@
       </div>
    </section>
 
+      <!--  End Contact -->
+
+     <!--  Start Footer -->
+
    <section>
-      <div class="footer">
-         <div class="footer__wrapper">
+      <div class="footer container-fluid">
+         <div class="footer__wrapper row">
             <a href="#" class="contact__icon">Contact</a>
             <a href="#" class="contact__icon">Download</a>
             <a href="#" class="contact__icon">Press</a>
@@ -234,8 +243,20 @@
       </div>
    </section>
 
-   <!--  End Contact -->
+   <!--  End Footer -->
 
+
+   <!-- jQuery, Popper.js, Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+</body>
 </body>
 
 </html>
